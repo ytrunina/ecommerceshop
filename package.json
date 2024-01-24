@@ -5,17 +5,19 @@
     "type": "module",
     "main": "server.js",
     "scripts": {
-      "start": "node backend/server.js",
-      "server": "nodemon backend/server.js",
-      "client": "npm start --prefix frontend",
-      "dev": "concurrently \"npm run server\" \"npm run client\""
+        "start": "node backend/server.js",
+        "server": "nodemon backend/server.js",
+        "client": "npm start --prefix frontend",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "author": "Yelena Trunina",
     "license": "ISC",
     "devDependencies": {
-      "concurrently": "^8.2.2",
-      "nodemon": "^3.0.3",
-      "dotenv": "^16.4.0"
+        "concurrently": "^8.2.2",
+        "dotenv": "^16.4.0",
+        "nodemon": "^3.0.3"
+    },
+    "dependencies": {
+        "mongoose": "^8.1.0"
     }
-  }
-  
+}
