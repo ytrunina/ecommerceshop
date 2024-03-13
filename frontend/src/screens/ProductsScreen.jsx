@@ -10,6 +10,7 @@ import { Form } from 'react-bootstrap';
 import { addToCart } from "../slices/cartSlice"
 import { useDispatch, useSelector } from "react-redux";
 import { toast} from 'react-toastify'
+import Meta from "../components/Meta"
 
 const ProductsScreen = () => {
 
@@ -57,7 +58,7 @@ const ProductsScreen = () => {
             <Message variant= 'danger'>{ error?.data?.message || error.error}</Message> 
         ) : (
             <>
-        
+        <Meta title={product.name} />
         <Row> 
             <Col md={5}>
                 <Image src={product.image} alt={product.name} fluid/>
